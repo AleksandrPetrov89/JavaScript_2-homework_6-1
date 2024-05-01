@@ -7,6 +7,7 @@
     "lint": "eslint .",
     "build": "webpack --mode production"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AleksandrPetrov89/JavaScript_2-homework_6-1.git"

@@ -1,4 +1,4 @@
-function orderByProps(obj, sortingOrder=[]) {
+export default function orderByProps(obj, sortingOrder=[]) {
     let sheet = [];
     let keys = Object.keys(obj).sort();
     if (sortingOrder.length > 0) {
@@ -14,11 +14,5 @@ function orderByProps(obj, sortingOrder=[]) {
     for (let prop of keys) {
         sheet.push({key: prop, value: obj[prop]});
     };
-    console.log(sheet);
     return sheet;
-}
-
-// For example
-const person = {name: 'мечник', health: 10, level: 2, attack: 80, defence: 40}
-orderByProps(person, ["name", "level"]);
-orderByProps(person);
+};
