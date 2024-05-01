@@ -1,0 +1,19 @@
+{
+  "name": "homework_6_1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleksandrPetrov89/JavaScript_2-homework_6-1.git"
+  },
+  "author": "Aleksandr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AleksandrPetrov89/JavaScript_2-homework_6-1/issues"
+  },
+  "homepage": "https://github.com/AleksandrPetrov89/JavaScript_2-homework_6-1#readme",
+  "description": ""
+}
