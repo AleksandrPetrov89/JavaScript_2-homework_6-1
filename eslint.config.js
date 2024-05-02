@@ -1,19 +1,22 @@
 import js from "@eslint/js";
+import globals from "globals";
 
 export default [
+    js.configs.recommended,
     {
-        env: {
-            "browser": true,
-            "es2021": true,
-            "jest": true
-        },
-        extends: "airbnb-base",
-        parserOptions: {
-            "ecmaVersion": "latest",
-            "sourceType": "module"
+        languageOptions: {
+            ecmaVersion: "latest",
+            sourceType: "module",
+            globals: {
+                ...globals.browser,
+                myCustomGlobal: "readonly",
+            }
         },
         rules: {
-            "no-unused-vars": "warn"
-        }
+            "no-unused-vars": "warn",
+            "no-console": "off",
+        },
+        ignores: [
+            "dist/", "coverage/**"],
     }
 ];
