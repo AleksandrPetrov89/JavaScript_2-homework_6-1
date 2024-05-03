@@ -9,10 +9,12 @@ export default function orderByProps(obj, sortingOrder=[]) {
                 throw new Error(`Ошибка! Параметр ${el} отсутствует у объекта!`);
             };
         };
-        keys = sortingOrder.concat(keys); 
+        keys = sortingOrder.concat(keys);
     };
     for (let prop of keys) {
-        sheet.push({key: prop, value: obj[prop]});
+        sheet.push( {
+            key: prop, value: obj[prop]
+        } );
     };
     return sheet;
 };
