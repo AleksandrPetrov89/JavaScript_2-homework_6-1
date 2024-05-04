@@ -1,4 +1,4 @@
-import orderByProps from '../app';
+import orderByProps from '../app.js';
 
 const person = {
     name: 'мечник', health: 10, level: 2, attack: 80, defence: 40,

@@ -6,7 +6,7 @@ export default [
     pluginJs.configs.recommended,
     {
         ignores: [
-            'dist/', '*.json'
+            'dist/', '*.json', 'coverage/'
         ], // отключение проверок для папок
     },
     {

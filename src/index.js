@@ -1,4 +1,4 @@
-import orderByProps from './js/app';
+import orderByProps from './js/app.js';
 
 // For example
 const person = {
